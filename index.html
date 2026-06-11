@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrimeIQ — Crime Analytics & Prediction Platform</title>
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand">
+        <span class="brand-icon"><i class="bi bi-shield-lock-fill"></i></span>
+        <span class="brand-name">Crime<span>IQ</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="openLoginBtn">Login</button>
+        <button class="btn btn-primary" id="openSignupBtn">Sign Up</button>
+        <button class="hamburger" id="hamburger" aria-label="menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <span class="hero-badge">
+          <i class="bi bi-stars"></i> AI-Powered Crime Intelligence
+        </span>
+        <h1 class="hero-title">
+          Crime Analytics & <span class="gradient-text">Prediction</span> Platform
+        </h1>
+        <p class="hero-sub">
+          Analyze crime trends, visualize patterns, and generate intelligent predictions using data-driven insights — built for analysts, agencies, and researchers.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg" id="heroStartBtn">
+            Get Started <i class="bi bi-arrow-right"></i>
+          </button>
+          <a href="#features" class="btn btn-outline btn-lg">
+            Learn More
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>120K+</strong>
+            <span>Records</span>
+          </div>
+          <div>
+            <strong>97%</strong>
+            <span>Accuracy</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Monitoring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="dashboard-mock glass">
+          <div class="mock-header">
+            <div class="dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-title">CrimeIQ — Live Dashboard</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-card mock-card-1">
+              <div class="mock-card-label">Total Crimes</div>
+              <div class="mock-card-value">42,318</div>
+              <div class="mock-trend up"><i class="bi bi-arrow-up-right"></i> 12.4%</div>
+            </div>
+            <div class="mock-card mock-card-2">
+              <div class="mock-card-label">Predictions</div>
+              <div class="mock-card-value">8,902</div>
+              <div class="mock-trend up"><i class="bi bi-arrow-up-right"></i> 4.7%</div>
+            </div>
+            <div class="mock-chart">
+              <div class="bars">
+                <span style="--h: 40%"></span>
+                <span style="--h: 65%"></span>
+                <span style="--h: 35%"></span>
+                <span style="--h: 80%"></span>
+                <span style="--h: 55%"></span>
+                <span style="--h: 90%"></span>
+                <span style="--h: 70%"></span>
+                <span style="--h: 50%"></span>
+                <span style="--h: 75%"></span>
+              </div>
+            </div>
+            <div class="mock-pill mock-pill-1"><i class="bi bi-shield-check"></i> Secure</div>
+            <div class="mock-pill mock-pill-2"><i class="bi bi-bell-fill"></i> 3 Alerts</div>
+          </div>
+        </div>
+        <div class="floating-card floating-1">
+          <i class="bi bi-graph-up-arrow"></i>
+          <div>
+            <strong>+18.2%</strong>
+            <span>Trend Up</span>
+          </div>
+        </div>
+        <div class="floating-card floating-2">
+          <i class="bi bi-cpu"></i>
+          <div>
+            <strong>ML Engine</strong>
+            <span>Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Features</span>
+        <h2 class="section-title">Everything you need to <span class="gradient-text">decode crime data</span></h2>
+        <p class="section-sub">A complete toolkit to analyze, visualize, and predict — wrapped in a modern, intuitive interface.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon icon-blue"><i class="bi bi-bar-chart-line-fill"></i></div>
+          <h3>Crime Analytics</h3>
+          <p>Visualize crime statistics and identify trends across regions, categories, and time periods with rich, interactive charts.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon icon-green"><i class="bi bi-cpu-fill"></i></div>
+          <h3>Prediction Engine</h3>
+          <p>Generate intelligent crime predictions powered by historical data, geo-context, and machine learning models.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon icon-purple"><i class="bi bi-grid-1x2-fill"></i></div>
+          <h3>Interactive Dashboard</h3>
+          <p>A professionally designed dashboard with statistics cards, deep analytics, and customizable views.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon icon-orange"><i class="bi bi-newspaper"></i></div>
+          <h3>Real-Time Crime News</h3>
+          <p>Stay updated with the latest crime-related news, alerts, and breaking events delivered to your dashboard.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon icon-red"><i class="bi bi-shield-lock-fill"></i></div>
+          <h3>Secure Authentication</h3>
+          <p>Account creation, login flows, and session management built with security best-practices in mind.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon icon-cyan"><i class="bi bi-phone-fill"></i></div>
+          <h3>Responsive Interface</h3>
+          <p>A pixel-perfect, touch-friendly experience that works seamlessly across desktop, tablet, and mobile devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATISTICS ===================== -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block" data-aos="zoom-in">
+          <div class="stat-icon"><i class="bi bi-database-fill-check"></i></div>
+          <div class="stat-num" data-target="125430">0</div>
+          <div class="stat-label">Records Analyzed</div>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+          <div class="stat-num" data-target="48920">0</div>
+          <div class="stat-label">Predictions Generated</div>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-icon"><i class="bi bi-tags-fill"></i></div>
+          <div class="stat-num" data-target="36">0</div>
+          <div class="stat-label">Crime Categories</div>
+        </div>
+        <div class="stat-block" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-icon"><i class="bi bi-layers-fill"></i></div>
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Dashboard Modules</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual" data-aos="fade-right">
+        <div class="about-illustration glass">
+          <div class="about-row">
+            <div class="about-chip"><i class="bi bi-geo-alt-fill"></i> Geo-Mapping</div>
+            <div class="about-chip"><i class="bi bi-clock-history"></i> Time Series</div>
+          </div>
+          <div class="about-row">
+            <div class="about-chip"><i class="bi bi-people-fill"></i> Demographics</div>
+            <div class="about-chip"><i class="bi bi-graph-up"></i> Forecasting</div>
+          </div>
+          <div class="about-row">
+            <div class="about-chip"><i class="bi bi-shield-check"></i> Secure Data</div>
+            <div class="about-chip"><i class="bi bi-bell-fill"></i> Live Alerts</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <span class="eyebrow">About the Platform</span>
+        <h2 class="section-title">Built for <span class="gradient-text">decision-makers</span> who rely on data.</h2>
+        <p>
+          CrimeIQ is an end-to-end analytics platform that helps researchers, analysts, and law enforcement agencies understand crime patterns and anticipate incidents before they happen. From large-scale data exploration to focused prediction workflows, CrimeIQ turns raw data into actionable intelligence.
+        </p>
+        <ul class="about-list">
+          <li><i class="bi bi-check-circle-fill"></i> Unified analytics across all crime categories</li>
+          <li><i class="bi bi-check-circle-fill"></i> Built-in prediction engine with explainable outputs</li>
+          <li><i class="bi bi-check-circle-fill"></i> Real-time alerts, news feed & ticker</li>
+          <li><i class="bi bi-check-circle-fill"></i> Designed for desktop, tablet & mobile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box glass" data-aos="zoom-in">
+        <div class="cta-glow"></div>
+        <h2>Ready to make smarter, data-driven decisions?</h2>
+        <p>Join thousands of analysts using CrimeIQ to detect, analyze, and predict crime trends in real time.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-primary btn-lg" id="ctaSignupBtn">Create Free Account</button>
+          <button class="btn btn-outline btn-lg" id="ctaLoginBtn">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand">
+          <span class="brand-icon"><i class="bi bi-shield-lock-fill"></i></span>
+          <span class="brand-name">Crime<span>IQ</span></span>
+        </a>
+        <p class="footer-about">A modern crime analytics & prediction platform built for the next generation of intelligence-driven decisions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="bi bi-envelope-fill"></i> hello@crimeiq.app</li>
+          <li><i class="bi bi-telephone-fill"></i> +1 (555) 010-2024</li>
+          <li><i class="bi bi-geo-alt-fill"></i> 221B Analytics Lane</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Github"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CrimeIQ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== AUTH MODAL ===================== -->
+  <div class="modal-overlay" id="authModal" aria-hidden="true">
+    <div class="modal glass" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="login">Login</button>
+        <button class="modal-tab" data-tab="signup">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="auth-form active" novalidate>
+        <div class="form-head">
+          <h3>Welcome back 👋</h3>
+          <p>Sign in to continue to your dashboard.</p>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <div class="input-wrap">
+            <i class="bi bi-envelope-fill"></i>
+            <input type="email" id="loginEmail" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <div class="input-wrap">
+            <i class="bi bi-lock-fill"></i>
+            <input type="password" id="loginPassword" placeholder="••••••••" required />
+            <button type="button" class="toggle-pass" data-target="loginPassword"><i class="bi bi-eye"></i></button>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="checkbox"><input type="checkbox" /> <span>Remember me</span></label>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <div class="form-msg" id="loginMsg"></div>
+
+        <button type="submit" class="btn btn-primary btn-block">Login <i class="bi bi-arrow-right"></i></button>
+        <p class="switch-text">Don't have an account? <a href="#" class="switch-to" data-tab="signup">Sign up</a></p>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form id="signupForm" class="auth-form" novalidate>
+        <div class="form-head">
+          <h3>Create your account</h3>
+          <p>Start exploring crime intelligence in minutes.</p>
+        </div>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <div class="input-wrap">
+            <i class="bi bi-person-fill"></i>
+            <input type="text" id="signupName" placeholder="Jane Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <div class="input-wrap">
+            <i class="bi bi-envelope-fill"></i>
+            <input type="email" id="signupEmail" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-wrap">
+              <i class="bi bi-lock-fill"></i>
+              <input type="password" id="signupPassword" placeholder="••••••••" required />
+              <button type="button" class="toggle-pass" data-target="signupPassword"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Confirm</label>
+            <div class="input-wrap">
+              <i class="bi bi-shield-lock-fill"></i>
+              <input type="password" id="signupConfirm" placeholder="••••••••" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-msg" id="signupMsg"></div>
+
+        <button type="submit" class="btn btn-primary btn-block">Create Account <i class="bi bi-arrow-right"></i></button>
+        <p class="switch-text">Already have an account? <a href="#" class="switch-to" data-tab="login">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/scripts/index.js"></script>
+</body>
+</html>

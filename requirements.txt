@@ -1,0 +1,10 @@
+flask
+requests
+python-dotenv
+pandas
+scikit-learn
+numpy
+imbalanced-learn
+joblib
+gdown
+

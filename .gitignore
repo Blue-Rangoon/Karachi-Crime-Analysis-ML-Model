@@ -1,0 +1,5 @@
+crime_model.joblib
+*.joblib
+__pycache__/
+*.pyc
+.env

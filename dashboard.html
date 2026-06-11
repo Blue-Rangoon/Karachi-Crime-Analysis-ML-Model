@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrimeIQ — Dashboard</title>
+  <link rel="stylesheet" href="/styles/dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="brand">
+          <span class="brand-icon"><i class="bi bi-shield-lock-fill"></i></span>
+          <span class="brand-name">Crime<span>IQ</span></span>
+        </a>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <nav class="side-nav">
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#" class="side-link active" data-section="overview"><i class="bi bi-grid-1x2-fill"></i><span>Dashboard</span></a></li>
+          <li><a href="#" class="side-link" data-section="analytics"><i class="bi bi-bar-chart-line-fill"></i><span>Crime Analytics</span></a></li>
+          <!-- <li><a href="#" class="side-link" data-section="prediction"><i class="bi bi-newspaper"></i><span>Crime News</span></a></li> -->
+          <li><a href="#" class="side-link" data-section="trends"><i class="bi bi-graph-up-arrow"></i><span>Trends & Insights</span></a></li>
+          <li><a href="#" class="side-link" data-section="news"><i class="bi bi-newspaper"></i><span>Live News</span></a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="#" class="side-link" data-section="settings"><i class="bi bi-gear-fill"></i><span>Settings</span></a></li>
+          <li><a href="#" class="side-link logout" id="logoutBtn"><i class="bi bi-box-arrow-right"></i><span>Logout</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="upgrade-card">
+          <i class="bi bi-stars"></i>
+          <h5>Upgrade to Pro</h5>
+          <p>Unlock advanced predictions & live alerts.</p>
+          <button class="btn btn-primary btn-sm">Upgrade</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- ===================== MAIN ===================== -->
+    <div class="main">
+
+      <!-- TOP NAVBAR -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+          <div>
+            <h1 class="topbar-title" id="topbarTitle">Dashboard</h1>
+            <p class="topbar-sub" id="topbarSub">Welcome back, here's what's happening today.</p>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="search-bar">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search crimes, regions, reports..." />
+            <span class="search-kbd">⌘K</span>
+          </div>
+
+          <div class="nav-icon-btn" id="notifBtn">
+            <i class="bi bi-bell-fill"></i>
+            <span class="notif-dot"></span>
+
+            <!-- Notification dropdown -->
+            <div class="dropdown notif-dropdown" id="notifDropdown">
+              <div class="dropdown-head">
+                <strong>Notifications</strong>
+                <a href="#">Mark all read</a>
+              </div>
+              <div class="notif-list" id="notifList">
+                <!-- populated by JS -->
+              </div>
+              <div class="dropdown-foot"><a href="#">View all notifications</a></div>
+            </div>
+          </div>
+
+          <div class="user-chip" id="userChip">
+            <div class="avatar" id="userAvatar">JD</div>
+            <div class="user-meta">
+              <strong id="userName">User</strong>
+              <span id="userRole">Analyst</span>
+            </div>
+            <i class="bi bi-chevron-down"></i>
+
+            <div class="dropdown user-dropdown" id="userDropdown">
+              <a href="#" id="topbarProfileLink"><i class="bi bi-person-fill"></i> Profile</a>
+              <a href="#" id="topbarSettingsLink"><i class="bi bi-gear-fill"></i> Settings</a>
+              <div class="user-dropdown-theme">
+                <span><i class="bi bi-palette-fill"></i> Theme</span>
+                <div class="theme-options">
+                  <button type="button" class="theme-opt-btn" id="themeDarkBtn" data-theme="dark" title="Dark Mode"><i class="bi bi-moon-stars-fill"></i></button>
+                  <button type="button" class="theme-opt-btn" id="themeLightBtn" data-theme="light" title="Light Mode"><i class="bi bi-sun-fill"></i></button>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a href="#"><i class="bi bi-question-circle-fill"></i> Help</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" id="dropdownLogout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===================== CONTENT ===================== -->
+      <main class="content">
+
+        <!-- ===== OVERVIEW SECTION ===== -->
+        <section class="page-section active" id="section-overview">
+
+          <!-- Stat cards -->
+          <div class="stat-cards">
+            <div class="stat-card">
+              <div class="stat-card-top">
+                <div class="stat-card-icon blue"><i class="bi bi-shield-exclamation"></i></div>
+                <span class="stat-card-trend up"><i class="bi bi-arrow-up"></i> 12.4%</span>
+              </div>
+              <h3>42,318</h3>
+              <p>Total Crimes</p>
+              <div class="stat-spark">
+                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#60A5FA" stroke-width="2" points="0,22 12,18 25,20 38,12 50,15 62,9 75,11 88,5 100,7"/></svg>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-top">
+                <div class="stat-card-icon purple"><i class="bi bi-tags-fill"></i></div>
+                <span class="stat-card-trend up"><i class="bi bi-arrow-up"></i> 3.2%</span>
+              </div>
+              <h3>36</h3>
+              <p>Crime Categories</p>
+              <div class="stat-spark">
+                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#A78BFA" stroke-width="2" points="0,20 12,17 25,19 38,15 50,17 62,12 75,14 88,8 100,10"/></svg>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-top">
+                <div class="stat-card-icon green"><i class="bi bi-cpu-fill"></i></div>
+                <span class="stat-card-trend up"><i class="bi bi-arrow-up"></i> 1.8%</span>
+              </div>
+              <h3>97.2%</h3>
+              <p>Prediction Accuracy</p>
+              <div class="stat-spark">
+                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#34D399" stroke-width="2" points="0,15 12,12 25,14 38,9 50,11 62,7 75,9 88,4 100,6"/></svg>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-card-top">
+                <div class="stat-card-icon red"><i class="bi bi-bell-fill"></i></div>
+                <span class="stat-card-trend down"><i class="bi bi-arrow-down"></i> 4.1%</span>
+              </div>
+              <h3>128</h3>
+              <p>Active Alerts</p>
+              <div class="stat-spark">
+                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#F87171" stroke-width="2" points="0,8 12,12 25,10 38,16 50,13 62,18 75,15 88,22 100,20"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts row -->
+          <div class="charts-grid">
+            <div class="chart-card large">
+              <div class="card-head">
+                <div>
+                  <h3>Crime Trend</h3>
+                  <p>Last 12 months overview</p>
+                </div>
+                <div class="card-actions">
+                  <button class="chip active">Year</button>
+                  <button class="chip">Quarter</button>
+                  <button class="chip">Month</button>
+                </div>
+              </div>
+              <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+            </div>
+
+            <div class="chart-card">
+              <div class="card-head">
+                <div>
+                  <h3>Category Distribution</h3>
+                  <p>By crime type</p>
+                </div>
+                <button class="icon-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="chart-wrap"><canvas id="categoryChart"></canvas></div>
+            </div>
+          </div>
+
+          <div class="charts-grid">
+            <div class="chart-card">
+              <div class="card-head">
+                <div>
+                  <h3>Monthly Analysis</h3>
+                  <p>Reports vs resolutions</p>
+                </div>
+                <button class="icon-btn"><i class="bi bi-download"></i></button>
+              </div>
+              <div class="chart-wrap"><canvas id="monthlyChart"></canvas></div>
+            </div>
+
+            <div class="chart-card">
+              <div class="card-head">
+                <div>
+                  <h3>Regional Analysis</h3>
+                  <p>Top 6 regions</p>
+                </div>
+                <button class="icon-btn"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <div class="chart-wrap"><canvas id="regionChart"></canvas></div>
+            </div>
+          </div>
+
+          <!-- Latest Crime News -->
+          <div class="charts-grid">
+            <div class="chart-card news-card large">
+              <div class="card-head">
+                <div>
+                  <h3><i class="bi bi-newspaper" style="color:#FBBF24"></i> Latest Crime News</h3>
+                  <p>Recent incidents & updates</p>
+                </div>
+                <button class="icon-btn" id="refreshNewsBtn"><i class="bi bi-arrow-clockwise"></i></button>
+              </div>
+              <div class="news-list" id="newsList">
+                <!-- populated by JS -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ===== CRIME ANALYTICS ===== -->
+        <section class="page-section" id="section-analytics">
+          <div class="charts-grid">
+            <div class="chart-card large">
+              <div class="card-head">
+                <div>
+                  <h3>Detailed Crime Analytics</h3>
+                  <p>Deep-dive view across all categories</p>
+                </div>
+              </div>
+              <div class="chart-wrap" style="height:340px"><canvas id="analyticsChart"></canvas></div>
+            </div>
+          </div>
+
+          <div class="charts-grid">
+            <div class="chart-card">
+              <div class="card-head"><div><h3>Severity Breakdown</h3><p>By crime severity</p></div></div>
+              <div class="chart-wrap"><canvas id="severityChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+              <div class="card-head"><div><h3>Time of Day</h3><p>Incident frequency</p></div></div>
+              <div class="chart-wrap"><canvas id="todChart"></canvas></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== CRIME PREDICTION (full) ===== -->
+        <section class="page-section" id="section-prediction">
+          <div class="chart-card news-card large">
+            <div class="card-head">
+              <div>
+                <h3><i class="bi bi-newspaper" style="color:#FBBF24"></i> Latest Crime News</h3>
+                <p>Recent incidents & updates</p>
+              </div>
+              <button class="icon-btn" id="refreshNewsBtn3"><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
+            <div class="news-list" id="newsListPrediction">
+              <!-- populated by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== TRENDS ===== -->
+        <section class="page-section" id="section-trends">
+          <div class="charts-grid">
+            <div class="chart-card large">
+              <div class="card-head"><div><h3>Trends & Insights</h3><p>Pattern detection over time</p></div></div>
+              <div class="chart-wrap" style="height:320px"><canvas id="insightsChart"></canvas></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== LIVE NEWS (full) ===== -->
+        <section class="page-section" id="section-news">
+          <div class="chart-card breaking-card">
+            <div class="card-head"><div><h3><i class="bi bi-broadcast" style="color:#EF4444"></i> Breaking News</h3><p>Top priority alerts</p></div></div>
+            <div class="breaking-grid" id="breakingGrid"></div>
+          </div>
+
+          <div class="chart-card">
+            <div class="card-head">
+              <div><h3>All News</h3><p>Latest crime-related coverage</p></div>
+              <button class="icon-btn" id="refreshNewsBtn2"><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
+            <div class="news-grid" id="newsGrid">
+              <div class="loading-state"><div class="spinner"></div><p>Loading latest news...</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== SETTINGS ===== -->
+        <section class="page-section" id="section-settings">
+          <div class="settings-grid">
+            <div class="chart-card">
+              <div class="card-head"><div><h3>Profile Information</h3><p>Update your personal details</p></div></div>
+              <form class="settings-form" id="profileForm">
+                <div class="avatar-row">
+                  <div class="avatar large" id="settingsAvatar">JD</div>
+                  <div>
+                    <button type="button" class="btn btn-outline btn-sm">Change Avatar</button>
+                    <p class="muted">JPG, PNG · Max 2MB</p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group"><label>Full Name</label><input type="text" id="setName" placeholder="Your name" /></div>
+                  <div class="form-group"><label>Email</label><input type="email" id="setEmail" placeholder="you@example.com" /></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group"><label>Role</label>
+                    <select><option>Analyst</option><option>Researcher</option><option>Officer</option><option>Administrator</option></select>
+                  </div>
+                  <div class="form-group"><label>Region</label>
+                    <select><option>North America</option><option>Europe</option><option>Asia Pacific</option><option>Global</option></select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+              </form>
+            </div>
+
+            <div class="chart-card">
+              <div class="card-head"><div><h3>Preferences</h3><p>Theme & notifications</p></div></div>
+              <div class="pref-list">
+                <div class="pref-item">
+                  <div><strong>Dark Mode</strong><p class="muted">Use the dark interface theme</p></div>
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                </div>
+                <div class="pref-item">
+                  <div><strong>Email Notifications</strong><p class="muted">Daily crime intelligence summary</p></div>
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                </div>
+                <div class="pref-item">
+                  <div><strong>Breaking News Alerts</strong><p class="muted">Push critical updates instantly</p></div>
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                </div>
+                <div class="pref-item">
+                  <div><strong>Weekly Reports</strong><p class="muted">Receive weekly analytics digest</p></div>
+                  <label class="switch"><input type="checkbox" /><span></span></label>
+                </div>
+                <div class="pref-item">
+                  <div><strong>Sound Alerts</strong><p class="muted">Play sound for high-priority alerts</p></div>
+                  <label class="switch"><input type="checkbox" /><span></span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ===================== BREAKING NEWS TICKER ===================== -->
+      <div class="ticker">
+        <div class="ticker-label"><i class="bi bi-broadcast"></i> Breaking</div>
+        <div class="ticker-track">
+          <div class="ticker-content" id="tickerContent">
+            <!-- populated by JS -->
+          </div>
+        </div>
+        <button class="ticker-pause" id="tickerPause" aria-label="Pause"><i class="bi bi-pause-fill"></i></button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="/scripts/dashboard.js"></script>
+</body>
+</html>
