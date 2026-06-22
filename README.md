@@ -1,21 +1,36 @@
-# 🛡️ CrimeIQ: Karachi Crime Analysis & ML Prediction Platform
-
 <div align="center">
 
-[![Vercel Deployment](https://img.shields.io/website?url=https%3A%2F%2Fkarachi-crime-analysis-model.vercel.app%2F&label=Live%20Website&logo=vercel&logoColor=white&style=for-the-badge&color=000000)](https://karachi-crime-analysis-model.vercel.app/)
-[![GitHub License](https://img.shields.io/github/license/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=blue)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/blob/main/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=gold)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=red)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/issues)
-[![Repository Size](https://img.shields.io/github/repo-size/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=green)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
-[![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=git&color=orange)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/commits/main)
-![Repository Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d117&countColor=%brightgreen&style=for-the-badge)
-[![Repository Clones](https://img.shields.io/badge/Clones-120%2B-brightgreen?style=for-the-badge&logo=git)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
+# Crime IQ - Karachi Crime Analysis ML Model
 
-**An AI-powered intelligence platform designed to analyze, visualize, and predict crime categories across Karachi using Machine Learning.**
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Karachi+Crime+Analysis+ML+Model;Predictive+Crime+Mapping;Data-Driven+Public+Safety;AI-Powered+Insights&center=true&width=520&height=45">
+</p>
 
-[Explore Live App 🚀](https://karachi-crime-analysis-model.vercel.app/) | [Report Bug 🐛](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/issues)
+*Machine Learning-Powered Crime Predictive Analysis Platform*
 
 </div>
+
+---
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-Framework-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+
+[![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Smart-Delivery-Route-Planner-AI?style=for-the-badge&color=f39c12)](https://github.com/Blue-Rangoon/Smart-Delivery-Route-Planner-AI/commits/main)
+[![Stars](https://img.shields.io/github/stars/Blue-Rangoon/Smart-Delivery-Route-Planner-AI?style=for-the-badge&color=9b59b6)](https://github.com/Blue-Rangoon/Smart-Delivery-Route-Planner-AI/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/Blue-Rangoon/Smart-Delivery-Route-Planner-AI?style=for-the-badge&color=1abc9c)](https://github.com/Blue-Rangoon/Smart-Delivery-Route-Planner-AI/graphs/contributors)
+[![License](https://img.shields.io/badge/License-AGPLv3.0-green?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge&color=success)](https://github.com/Blue-Rangoon/Smart-Delivery-Route-Planner-AI)
+
+</div>
+
+---
+
+![Project Preview](./preview.jpeg)
 
 ---
 
