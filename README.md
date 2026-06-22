@@ -8,7 +8,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=red)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/issues)
 [![Repository Size](https://img.shields.io/github/repo-size/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=green)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
 [![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=git&color=orange)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/commits/main)
-[![Repository Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=Views&labelColor=%230d1117&countColor=%2358a6ff&style=for-the-badge)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
+![Repository Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d117&countColor=%brightgreen&style=for-the-badge)
 [![Repository Clones](https://img.shields.io/badge/Clones-120%2B-brightgreen?style=for-the-badge&logo=git)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
 
 **An AI-powered intelligence platform designed to analyze, visualize, and predict crime categories across Karachi using Machine Learning.**
