@@ -27,13 +27,15 @@
 
 ---
 
-![Project Preview](./preview.jpeg)
+![Project Preview](screenshots/landing.png)
+
 
 ---
 
 ## 📋 Table of Contents
 
 - [About The Project](#about-the-project)
+- [📸 Screenshots](#-screenshots)
 - [⭐ Repository Visitors](#-repository-visitors)
 - [✨ Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -58,12 +60,22 @@
 
 Using historical crime records combined with synthetic demographic information of suspects, the platform trains machine learning models to classify and predict the most probable crime category based on situational and demographic inputs.
 
+> 💡 **Live Demo:** [CrimeIQ - Analysis & Prediction Portal](https://karachi-crime-analysis-model.vercel.app/) *(Live Website)*
+
 ### 🧠 Model Performance & Selection
 We compared three different machine learning models using the complete ML lifecycle (data cleaning, scaling, handling class imbalances, and splitting):
 
 1. **Random Forest Classifier** *(Best Performing)*: Achieved **~97.8% Accuracy** and **~95.6% Precision**. Excellent for modeling complex boundaries.
 2. **Decision Tree Classifier**: Achieved **~95.2% Accuracy**. Highly explainable, but slightly more prone to variance.
 3. **Logistic Regression**: Achieved **~70.4% Accuracy**. Serving as our baseline linear classifier.
+
+---
+
+## 📸 Screenshots
+
+#### Website Snapshots
+
+![Website Page 1](screenshots/dashboard.png)
 
 ---
 
