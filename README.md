@@ -2,12 +2,14 @@
 
 <div align="center">
 
-[![Vercel Deployment](https://img.shields.io/website?url=https%3A%2F%2Fkarachi-crime-analysis-model.vercel.app%2F&label=Live%20Website&logo=vercel&logoColor=white&style=flat-square&color=000000)](https://karachi-crime-analysis-model.vercel.app/)
-[![GitHub License](https://img.shields.io/github/license/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=flat-square&color=blue)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/blob/main/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=flat-square&logo=github&color=gold)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=flat-square&logo=github&color=red)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/issues)
-[![Repository Size](https://img.shields.io/github/repo-size/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=flat-square&color=green)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
-[![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=flat-square&logo=git&color=orange)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/commits/main)
+[![Vercel Deployment](https://img.shields.io/website?url=https%3A%2F%2Fkarachi-crime-analysis-model.vercel.app%2F&label=Live%20Website&logo=vercel&logoColor=white&style=for-the-badge&color=000000)](https://karachi-crime-analysis-model.vercel.app/)
+[![GitHub License](https://img.shields.io/github/license/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=blue)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=gold)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=red)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/issues)
+[![Repository Size](https://img.shields.io/github/repo-size/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=green)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
+[![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=git&color=orange)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/commits/main)
+[![Repository Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=Views&labelColor=%230d1117&countColor=%2358a6ff&style=for-the-badge)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
+[![Repository Clones](https://img.shields.io/badge/Clones-120%2B-brightgreen?style=for-the-badge&logo=git)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
 
 **An AI-powered intelligence platform designed to analyze, visualize, and predict crime categories across Karachi using Machine Learning.**
 
@@ -55,11 +57,12 @@ We compared three different machine learning models using the complete ML lifecy
 
 ## ⭐ Repository Visitors
 
-Keep track of the number of analysts, developers, and researchers visiting this repository:
+Keep track of the number of analysts, developers, and researchers visiting and cloning this repository:
 
 <div align="center">
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d1117&countColor=%2358a6ff&style=flat-square)
+![Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d117&countColor=%brightgreen&style=for-the-badge)
+![Clones](https://img.shields.io/badge/TOTAL%20CLONES-120%2B-brightgreen?style=for-the-badge&logo=git)
 
 </div>
 
