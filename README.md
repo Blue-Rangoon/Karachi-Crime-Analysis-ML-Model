@@ -307,8 +307,6 @@ Distributed under the AGPL-3.0 License. See [LICENSE](LICENSE) for more informat
 
 ## 👥 Team
 
-Meet the core developers behind CrimeIQ:
-
 <div align="center">
   
   <!-- Row 1: 3 Members -->
