@@ -86,8 +86,7 @@ Keep track of the number of analysts, developers, and researchers visiting and c
 <div align="center">
 
 ![Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d117&countColor=%brightgreen&style=for-the-badge)
-![GitHub Clones](https://komarev.com/ghpvc/?username=Blue-Rangoon&repo=smart-route-delivery-planner&style=for-the-badge&color=00cf63&label=Repo+Clones&clones=true)
-
+![Repo Clones](https://img.shields.io/badge/TOTAL%20CLONES-120%2B-brightgreen?style=for-the-badge&logo=git)
 
 
 *Thank you for visiting! If you find this project useful, please consider giving it a ⭐*
