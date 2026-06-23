@@ -86,7 +86,9 @@ Keep track of the number of analysts, developers, and researchers visiting and c
 <div align="center">
 
 ![Views](https://api.visitorbadge.io/api/visitors?path=Blue-Rangoon.Karachi-Crime-Analysis-ML-Model&label=TOTAL%20VISITORS&labelColor=%230d117&countColor=%brightgreen&style=for-the-badge)
-![GitHub Clones](https://komarev.com/ghpvc/?username=Blue-Rangoon&repo=Karachi-Crime-Analysis-ML-Model&style=for-the-badge&color=00cf63&label=Repo+Clones&clones=true)
+![GitHub Clones](https://komarev.com/ghpvc/?username=Blue-Rangoon&repo=karachi-crime-analysis-ml-model&style=for-the-badge&color=230d117&label=Repo+Clones&clones=true)
+
+
 
 *Thank you for visiting! If you find this project useful, please consider giving it a ⭐*
 
@@ -322,7 +324,7 @@ Distributed under the AGPL-3.0 License. See [LICENSE](LICENSE) for more informat
           <font size="3" color="#58a6ff"><b>Sadia Shoaib</b></font>
         </a>
         <br />
-        <font size="2" color="#8b949e">Lead ML Architect & Developer</font>
+        <font size="2" color="#8b949e">Lead ML Developer</font>
         <br /><br />
         <a href="https://github.com/Sadia-Shoaib">
           <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Profile" />
