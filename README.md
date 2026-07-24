@@ -16,10 +16,9 @@
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 
 [![Last Commit](https://img.shields.io/github/last-commit/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=f39c12)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/commits/main)
-[![Repo Size](https://img.shields.io/github/repo-size/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=3498db)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
 [![Stars](https://img.shields.io/github/stars/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=9b59b6)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=1abc9c)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/graphs/contributors)
 [![Collaborators](https://img.shields.io/badge/Collaborators-5-b647ed?style=for-the-badge)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&color=1abc9c)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model/graphs/contributors)
 ![GitHub Issues](https://img.shields.io/github/issues/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model?style=for-the-badge&logo=github&color=red)
 [![License](https://img.shields.io/badge/License-AGPLv3.0-green?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge&color=success)](https://github.com/Blue-Rangoon/Karachi-Crime-Analysis-ML-Model)
